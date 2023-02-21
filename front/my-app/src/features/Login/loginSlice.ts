@@ -33,7 +33,7 @@ export const loginSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(loginAsync.fulfilled, (state, action) => {
-        // console.log("refresh", action.payload);
+        console.log("refresh", action.payload);
         // console.log("access", action.payload);
         state.logged = true;
       })
